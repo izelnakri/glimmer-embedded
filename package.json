@@ -1,0 +1,31 @@
+{
+  "name": "playground",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glimmer/compiler": "^0.79.1",
+    "@glimmer/manager": "^0.79.1",
+    "@glimmer/opcode-compiler": "^0.79.1",
+    "@glimmer/owner": "^0.79.1",
+    "@glimmer/program": "^0.79.1",
+    "@glimmer/runtime": "^0.79.1"
+  },
+  "devDependencies": {
+    "@glimmer/application": "^1.0.4",
+    "@glimmer/bundle-compiler": "^0.59.1",
+    "@glimmer/component": "^1.0.4",
+    "@glimmer/env": "^0.1.7",
+    "@glimmer/reference": "^0.79.1",
+    "@simple-dom/document": "^1.4.0",
+    "@simple-dom/serializer": "^1.4.0",
+    "@simple-dom/void-map": "^1.4.0",
+    "esbuild": "^0.12.0"
+  }
+}
