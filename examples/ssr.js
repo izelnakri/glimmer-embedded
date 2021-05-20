@@ -1,10 +1,10 @@
-import { setComponentTemplate, getOwner, helperCapabilities, setHelperManager } from '@glimmer/core';
-import component from '@glimmer/component';
-import { renderToString } from '@glimmer/ssr';
+const { setComponentTemplate, getOwner, helperCapabilities, setHelperManager } = require('@glimmer/core');
+const component = require('@glimmer/component');
+const { renderToString } = require('@glimmer/ssr');
 
-import { templateFactory } from '@glimmer/opcode-compiler';
-import { artifacts } from '@glimmer/program';
-import { precompileJSON } from '@glimmer/compiler';
+const { templateFactory } = require('@glimmer/opcode-compiler');
+const { artifacts } = require('@glimmer/program');
+const { precompileJSON } = require('@glimmer/compiler');
 
 let GlimmerComponent = component.default;
 let templateId = 0;
@@ -131,10 +131,10 @@ class LocaleService {
   }
 }
 
-console.log(await renderToString(PageComponent, {
+renderToString(PageComponent, {
   owner: {
     services: {
       locale: new LocaleService('en_US')
     }
   },
-}));
+}).then(console.log);
