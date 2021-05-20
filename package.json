@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deno:ssr": "deno run --allow-all --unstable examples/deno-ssr.js"
+    "deno:ssr": "node scripts/build-for-deno.js && deno run --allow-all --unstable examples/deno-ssr.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,12 +1,10 @@
-const { setComponentTemplate, getOwner, helperCapabilities, setHelperManager } = require('@glimmer/core');
-const component = require('@glimmer/component');
-const { renderToString } = require('@glimmer/ssr');
+import { setComponentTemplate, getOwner, helperCapabilities, setHelperManager } from '@glimmer/core';
+import GlimmerComponent from '@glimmer/component';
+import { renderToString } from '@glimmer/ssr';
 
-const { templateFactory } = require('@glimmer/opcode-compiler');
-const { artifacts } = require('@glimmer/program');
-const { precompileJSON } = require('@glimmer/compiler');
+import { templateFactory } from '@glimmer/opcode-compiler';
+import { precompileJSON } from '@glimmer/compiler';
 
-let GlimmerComponent = component.default;
 let templateId = 0;
 
 function createTemplate(
