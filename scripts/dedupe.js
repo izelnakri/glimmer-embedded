@@ -5,5 +5,5 @@ await Promise.all([
   '@glimmer/node',
   '@glimmer/core'
 ].map(async (pkgName) => {
-  await fs.rm(`node_modules/${pkgName}/node_modules`, { recursive: true });
+  await fs.rm(`node_modules/${pkgName}/node_modules`, { recursive: true, force: true });
 }));

@@ -3,7 +3,7 @@ import esbuild from 'esbuild';
 import './dedupe.js';
 
 const res = await esbuild.build({
-  entryPoints: ['./ssr/index.js'],
+  entryPoints: ['./ssr/index.ts'],
   platform: "node",
   bundle: true,
   outfile: 'dist/index.js'
